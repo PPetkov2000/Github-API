@@ -5,6 +5,7 @@
 }
 
 body {
+  background-color: lightgray;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -19,22 +20,25 @@ body {
 
   &__input {
     width: 15rem;
-    padding: 0.3rem 0.6rem;
+    padding: 0.4rem 0.6rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     outline: none;
   }
 
   &__button {
-    background-color: rgb(133, 125, 125);
+    background-color: rgb(179, 165, 165);
     color: #000;
-    padding: 0.4rem 0.6rem;
+    padding: 0.45rem 1rem;
     font-weight: bold;
-    border: 2px solid #000;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     cursor: pointer;
     border: none;
     outline: none;
 
     &:hover {
-      background-color: rgb(55, 55, 226);
+      background-color: #1111ca;
       color: #fff;
       transition: 0.3s ease-in-out;
     }
@@ -81,6 +85,7 @@ body {
 .user-repos {
   &__title {
     text-align: center;
+    padding: 0.5rem;
     font-size: 2rem;
     border-bottom: 2px solid #000;
   }
@@ -96,9 +101,10 @@ body {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      margin-bottom: 0.5rem;
 
       &-badge {
-        background-color: rgb(55, 55, 226);
+        background-color: #1111ca;
         color: #fff;
         margin-left: 1rem;
         padding: 0.3rem 1rem;
@@ -117,18 +123,18 @@ body {
   }
 
   &__repo-link-wrapper {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 
   &__repo-link {
-    color: rgb(55, 55, 226);
+    color: #1111ca;
     margin-top: 1rem;
     padding: 5px 10px;
     text-decoration: none;
-    border: 2px solid rgb(55, 55, 226);
+    border: 2px solid #1111ca;
 
     &:hover {
-      background-color: rgb(55, 55, 226);
+      background-color: #1111ca;
       color: #fff;
       transition: 0.5s ease-in-out;
     }
