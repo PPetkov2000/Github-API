@@ -22,7 +22,6 @@ function main() {
 
   sendHttpRequest(`https://api.github.com/users/${user}`)
     .then((data) => {
-      console.log(data);
       userInfo.innerHTML = "";
 
       const aside = document.createElement("aside");
@@ -44,8 +43,7 @@ function main() {
 
       sendHttpRequest(`https://api.github.com/users/${user}/repos`)
         .then((repos) => {
-          console.log(repos);
-          let output = `<section class="user-repos"><h1 class="user-repos__title">Repos</h1>`;
+          let output = `<section class="user-repos"><h1 class="user-repos__title">${repos[0].owner.login}'s repos</h1>`;
           output += repos
             .map((repo) => {
               return `
